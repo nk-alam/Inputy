@@ -1,0 +1,80 @@
+.inputy-form-group {
+  margin-bottom: 1rem;
+}
+
+.inputy-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.inputy-mandatory {
+  color: #dc2626;
+  margin-left: 0.25rem;
+}
+
+.inputy-form-control {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #374151;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.inputy-form-control:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.inputy-focused {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.inputy-form-control:disabled {
+  background-color: #f3f4f6;
+  opacity: 1;
+}
+
+.inputy-form-control::placeholder {
+  color: #9ca3af;
+}
+
+.inputy-error {
+  border-color: #dc2626;
+}
+
+.inputy-error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .inputy-label {
+    color: #e5e7eb;
+  }
+
+  .inputy-form-control {
+    color: #e5e7eb;
+    background-color: #1f2937;
+    border-color: #4b5563;
+  }
+
+  .inputy-form-control:disabled {
+    background-color: #374151;
+  }
+
+  .inputy-form-control::placeholder {
+    color: #6b7280;
+  }
+}
